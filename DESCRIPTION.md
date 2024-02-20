@@ -96,64 +96,6 @@ Function main()
 
 	searchContact("name")
 
-End FunctionBegin
-Structure Contact
-    String name
-    String address
-    String phone
-End Structure
-
-Array of Contact addressBook
-
-Function addContact(String name, String address, String phone)
-    Create a new Contact object newContact
-    Set newContact.name to name
-    Set newContact.address to address
-    Set newContact.phone to phone
-    Add newContact to addressBook
-End Function
-
-Function displayContacts()
-    If addressBook is empty Then
-        Output "Address book is empty."
-        Return
-    End If
-
-    Output "Contacts in the address book: "
-    For each contact in addressBook
-        Output "Name: " + contact.name
-        Output "Address: " + contact.address
-        Output "Phone: " + contact.phone
-        Output "---------------------"
-    End For
-End Function
-
-Function searchContact(String name)
-    Boolean found = False
-    For each contact in addressBook
-        If contact.name is equal to name Then
-            Output "Contact found:"
-            Output "Name: " + contact.name
-            Output "Address: " + contact.address
-            Output "Phone: " + contact.phone
-            Set found to True
-            Exit for
-        End If
-    End For
-    If found is False Then
-        Output "Contact not found."
-    End If
-End Function
-
-Function main()
-
-    addContact("name", "address", "phone number")
-    addContact("name", "address", "phone number")
-
-	displayContacts()
-
-	searchContact("name")
-
 End Function
 ```
 
