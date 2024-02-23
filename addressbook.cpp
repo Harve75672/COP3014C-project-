@@ -4,14 +4,17 @@
 
 using namespace std;
 
+// This is the structure for storing the contact information.
 struct Contact {
     string name;
     string address;
     string phone;
 };
 
+// This is the vector that will store the contacts.
 vector<Contact> addressBook;
 
+// This function will allow user to add contacts to the address book.
 void addContact() {
     Contact newContact;
     cout << "Enter name: ";
@@ -25,6 +28,7 @@ void addContact() {
     successfully!" << endl;
 }
 
+// This function will allow the program to display contacts in the book.
 void displayContacts() {
     if (addressBook.empty()) {
         cout << "Address book is empty!" << endl;
@@ -40,6 +44,7 @@ void displayContacts() {
     }
 }
 
+// This function enables the user to search for contacts using names.
 void searchContact(string name) {
     bool found = false;
     for (int i = 0; i < addressBook.size(); i++) {
