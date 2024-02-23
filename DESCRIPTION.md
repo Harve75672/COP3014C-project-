@@ -47,12 +47,16 @@ End Structure
 
 Array of Contact addressBook
 
-Function addContact(String name, String address, String phone)
+Function addContact()
     Create a new Contact object newContact
-    Set newContact.name to name
-    Set newContact.address to address
-    Set newContact.phone to phone
+    Output "Enter name:"
+    Input newContact.name
+    Output "Enter address:"
+    Input newContact.address
+    Output "Enter phone number:"
+    Input newContact.phone
     Add newContact to addressBook
+    Output "Contact added successfully!"
 End Function
 
 Function displayContacts()
@@ -88,13 +92,40 @@ Function searchContact(String name)
 End Function
 
 Function main()
+    Integer choice
+    String searchName
 
-    addContact("name", "address", "phone number")
-    addContact("name", "address", "phone number")
+    Do
+       Output "Address Book Menu"
+       Output "1. Add Contact"
+       Output "2. Display Contacts"
+       Output "3. Search Contact"
+       Output "4. Exit"
+       Output "Enter your choice:"
+       Input choice
 
-	displayContacts()
+       Switch choice
+           Case 1:
+               Call addContact()
+               Break
+           Case 2:
+               Call displayContacts()
+               Break
+           Case 3:
+               Output "Enter name to search:"
+               Input searchName
+               Call searchContact(searchName)
+               Break
+           Case 4:
+               Output "Existing program. Goodbye!"
+               Break
+           Default:
+               Output "Invalid choice. Please try again."
+      End Switch
+   While choice is not equal to 4
 
-	searchContact("name")
+   Return 0
+End Function
 
 End Function
 ```
