@@ -19,7 +19,7 @@ _Describe what the requirements are for the project._
 
 ## Statement of Independent Effort
 
-I, Briana Harvey, hereby certify that this is my original work completed with the assistance of the resources listed in the reference. I used these resources in the following areas: ***[...]***.
+I, Briana Harvey, hereby certify that this is my original work completed with the assistance of the resources listed in the reference. I used these resources in the following areas: with the use of a switch.
 
 
 ## Analysis of Specifications
@@ -151,13 +151,11 @@ _Test cases should include edge cases (values near the upper and lower bounds of
 
 ## Code
 
-[Code]addressbook.cpp
+[Code](addressbook.cpp)
 
 ## User Manual
-_Include a link to a separate file called GUIDE.md_
 
 [User Manual](GUIDE.md) <br/>
-_Updated: **[DATE]**_
 
 ## References
 
