@@ -1,10 +1,21 @@
 # Project Part 1
 
-[//]: <> (Basic markdown syntax can be found here -https://www.markdownguide.org/basic-syntax/)
+Requirements:
+Data Types:
+Understand the basic data types in C++ such as int, double, and string.
+Explore the usage of data types in variable declarations and assignments.
+Must use at least 3 different types.
 
-[//]: <> (Copy this file and rename it based on the submission number, i.e., PART1.md. Remove all the comments and italisized text before submitting.)
+File Input/Output:
+Learn to read from and write to files using ifstream and ofstream classes.
+Understand file handling concepts to persistently store and retrieve data.
+Should incorporate either reading from or writing to a file.
 
-_Describe what the requirements are for the project._
+If/Else Statements:
+Grasp the fundamentals of conditional statements using if/else.
+Implement decision-making logic based on certain conditions.
+Should include error-checking as well as other uses of the if and/or if-else statements.
+The use of a switch is optional.
 
 ## Table of Contents
 1. [Statement of Independent Effort](#statement-of-independent-effort)
@@ -24,7 +35,7 @@ I, Briana Harvey, hereby certify that this is my original work completed with th
 
 ## Analysis of Specifications
 
-_Analysis of specifications is where you identify the inputs, outputs, and processes performed by the code. An example process in a blackjack game would be "generate a random card for the user". This section must contain an IPO chart for each function._
+My program is an address book. You input the persons name, address, and phone number. It then creates the contact then stores it so you can access it at a later date. You also have the ability to see how many contacts you have. There is limited capicity to 100 at this moment in time.
 
 ### Main
 
@@ -45,45 +56,47 @@ Structure Contact
     String phone
 End Structure
 
-Array of Contact addressBook
+Constant MAX_CONTACTS = 100
+Declare array addressBook[MAX_CONTACTS]
+Declare integer numContacts = 0
 
 Function addContact()
-    Create a new Contact object newContact
+  If numContacts < MAX_CONTACTS:
     Output "Enter name:"
     Input newContact.name
     Output "Enter address:"
     Input newContact.address
     Output "Enter phone number:"
     Input newContact.phone
-    Add newContact to addressBook
+    addressBook[numContacts] = newContact
+    Increment numContacts by 1
     Output "Contact added successfully!"
+  Else
+    Output "Address book is full. Cannot add more contacts."
 End Function
 
 Function displayContacts()
-    If addressBook is empty Then
+    If numContacts == 0:
         Output "Address book is empty."
-        Return
+    Else
+        For i = 0 to numContacts - 1:
+            1. Print "Name: ", addressBook[i].name
+            2. Print "Address: ", addressBook[i].address
+            3. Print "Phone: ", addressBook[i].phone
+            4. Print "------------------------------"
     End If
-
-    Output "Contacts in the address book: "
-    For each contact in addressBook
-        Output "Name: " + contact.name
-        Output "Address: " + contact.address
-        Output "Phone: " + contact.phone
-        Output "---------------------"
-    End For
 End Function
 
 Function searchContact(String name)
     Boolean found = False
-    For each contact in addressBook
-        If contact.name is equal to name Then
-            Output "Contact found:"
-            Output "Name: " + contact.name
-            Output "Address: " + contact.address
-            Output "Phone: " + contact.phone
-            Set found to True
-            Exit for
+    For i = 0 to numContacts - 1:
+        If addressBook[i].name == name:
+            1. Print "Contact found:"
+            2. Print "Name: ", addressBook[i].name
+            3. Print "Address: ", addressBook[i].address
+            4. Print "Phone: ", addressBook[i].phone
+            5. Set found to true
+            6. Break the loop
         End If
     End For
     If found is False Then
