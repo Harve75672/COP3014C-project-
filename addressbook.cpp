@@ -1,52 +1,61 @@
 #include <iostream>
-#include <vector>
 #include <string>
-
 using namespace std;
 
-// This is the structure for storing the contact information.
+// Creating the contact structure
 struct Contact {
     string name;
     string address;
     string phone;
 };
 
-// This is the vector that will store the contacts.
-vector<Contact> addressBook;
+// Defining a max number of contacts
+const int MAX_CONTACTS = 100;
 
-// This function will allow user to add contacts to the address book.
+// Defining an array to store contacts
+Contact addressBook[MAX_CONTACTS];
+
+// Keeping track of number of contacts stored
+int numContacts = 0;
+
+// Function that allows user to enter contacts
 void addContact() {
-    Contact newContact;
-    cout << "Enter name: ";
-    getline(cin, newContact.name);
-    cout << "Enter address: ";
-    getline(cin, newContact.address);
-    cout << "Enter phone number: ";
-    getline(cin, newContact.phone);
-    addressBook.push_back(newContact);
-    cout << "Contact added successfully!" << endl;
-}
-
-// This function will allow the program to display contacts in the book.
-void displayContacts() {
-    if (addressBook.empty()) {
-        cout << "Address book is empty!" << endl;
-        return;
+    // Making sure we don't put in more than the max
+    if (numContacts < MAX_CONTACTS) {
+        Contact newContact;
+        cout << "Enter name: ";
+        getline(cin, newContact.name);
+        cout << "Enter address: ";
+        getline(cin, newContact.address);
+        cout << "Enter phone number: ";
+        getline(cin, newContact.phone);
+        addressBook[numContacts++] = newContact;
+        cout << "Contact added successfully!" << endl;
+    } else {
+        cout << "Address book is full. Cannot add more contacts." << endl;
     }
 
-    cout << "Contacts in the address book:" << endl;
-    for (int i = 0; i < addressBook.size(); i++) {
-        cout << "Name: " << addressBook[i].name << endl;
-        cout << "Address: " << addressBook[i].address << endl;
-        cout << "Phone: " << addressBook[i].phone << endl;
-        cout << "--------------------------" << endl;
+}
+
+// Function that displays all contacts
+void displayContacts () {
+    if (numContacts == 0) {
+        cout << "The address book is empty." << endl;
+    } else {
+        cout << "Contacts in the address book:" << endl;
+        for (int i = 0; i < numContacts; i++) {
+            cout << "Name: " << addressBook[i].name << endl;
+            cout << "Adress: " << addressBook[i].address << endl;
+            cout << "Phone: " << addressBook[i].phone << endl;
+            cout << "-----------------------------" << endl;
+        } 
     }
 }
 
-// This function enables the user to search for contacts using names.
+// Function that enables contact searching
 void searchContact(string name) {
     bool found = false;
-    for (int i = 0; i < addressBook.size(); i++) {
+    for (int i = 0; i < numContacts; i++) {
         if (addressBook[i].name == name) {
             cout << "Contact found:" << endl;
             cout << "Name: " << addressBook[i].name << endl;
@@ -61,6 +70,7 @@ void searchContact(string name) {
     }
 }
 
+// Main function
 int main() {
     int choice;
     string searchName;
@@ -93,7 +103,7 @@ int main() {
             default:
                 cout << "Invalid choice. Please try again.\n";
         }
-    } while (choice !=4);
+    } while (choice != 4);
 
     return 0;
 }
