@@ -161,4 +161,4 @@ _Updated: **[DATE]**_
 
 ## References
 
-_List all references in [APA 7 Format](https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/index.html)._
+Chatgpt. ChatGPT. (2024). https://chat.openai.com/
