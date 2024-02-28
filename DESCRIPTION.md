@@ -41,9 +41,9 @@ My program is an address book. You input the persons name, address, and phone nu
 
 _Fill in the values in the IPO Chart. See video in Canvas for example._
 
-| Input    | Process  | Output   |
-| -------- | -------- | -------- |
-| Text     | Text     | Text     |
+| Input                              | Process          | Output           |
+| ---------------------------------- | ---------------- | ---------------- |
+| Names, addresses, phone numbers    | Storing info     | Contact Info     |
 
 
 ## Pseudocode
