@@ -24,8 +24,7 @@ void addContact() {
     cout << "Enter phone number: ";
     getline(cin, newContact.phone);
     addressBook.push_back(newContact);
-    cout << "Contact added 
-    successfully!" << endl;
+    cout << "Contact added successfully!" << endl;
 }
 
 // This function will allow the program to display contacts in the book.
