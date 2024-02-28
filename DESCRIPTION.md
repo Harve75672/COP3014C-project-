@@ -39,7 +39,6 @@ My program is an address book. You input the persons name, address, and phone nu
 
 ### Main
 
-_Fill in the values in the IPO Chart. See video in Canvas for example._
 
 | Input                              | Process          | Output           |
 | ---------------------------------- | ---------------- | ---------------- |
@@ -151,9 +150,6 @@ _Paste flowchart image here. Note that the image has to uploaded to your reposit
 
 ## Test Cases
 
-_Test cases should include edge cases (values near the upper and lower bounds of the allowed values), and acceptable and unacceptable values. Produce at least 5 unique cases._
-
-**Example (remove from submission)**
 
 |Case #|Case Description|Input|Condition (numContacts < 100)|Output|
 |:---:|:---|:---|:---:|:---|
