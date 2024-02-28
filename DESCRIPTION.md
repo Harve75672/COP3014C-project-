@@ -155,11 +155,11 @@ _Test cases should include edge cases (values near the upper and lower bounds of
 
 **Example (remove from submission)**
 
-|Case #|Case Description|Input|Condition (price > creditLimit)|Output|
+|Case #|Case Description|Input|Condition (numContacts < 100)|Output|
 |:---:|:---|:---|:---:|:---|
-|1|Item that should be approved|Price = 7800|False |Approved|
-|2|Item that should be approved (edge case)|Price = 8000 |False|Approved|
-|3|Item that should not be approved|Price = 10000|True| Not Approved|
+|1|Item that should be approved|Contact 10 has been successfully added.|True |Approved|
+|2|Item that should be approved (edge case)|Contact 99 has been successfully added. |True|Approved|
+|3|Item that should not be approved|Contact 101 has not been added. Address book met capicity|False| Not Approved|
 
 
 ## Code
