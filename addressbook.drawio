@@ -1,0 +1,280 @@
+<mxfile host="Electron" modified="2024-02-29T21:38:12.748Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="QhReRFhTM8E29lIBYFvS" version="23.1.5" type="device">
+  <diagram name="Page-1" id="AmCsYMci8Y7DWQln6HLX">
+    <mxGraphModel dx="679" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-1" value="&lt;div&gt;1. Structure Contact {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;string name&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;string address&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;string phone&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Constant MAX_CONTACTS = 100&lt;/div&gt;&lt;div&gt;3. Declare array addressBook[MAX_CONTACTS]&lt;/div&gt;&lt;div&gt;4. Declare integer numContacts = 0&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5. Function addContact():&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;a. If numContacts &amp;lt; MAX_CONTACTS:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; i. Declare Contact newContact&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ii. Print &quot;Enter name: &quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; iii. Read newContact.name&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; iv. Print &quot;Enter address: &quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; v. Read newContact.address&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; vi. Print &quot;Enter phone number: &quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; vii. Read newContact.phone&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; viii. addressBook[numContacts] = newContact&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ix. Increment numContacts by 1&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; x. Print &quot;Contact added successfully!&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;b. Else:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; i. Print &quot;Address book is full. Cannot add more contacts.&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6. Function displayContacts():&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;a. If numContacts == 0:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; i. Print &quot;Address book is empty.&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;b. Else:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; i. For i = 0 to numContacts - 1:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1. Print &quot;Name: &quot;, addressBook[i].name&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;2. Print &quot;Address: &quot;, addressBook[i].address&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3. Print &quot;Phone: &quot;, addressBook[i].phone&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;4. Print &quot;-----------------------------&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;7. Function searchContact(name):&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;a. Declare boolean found = false&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;b. For i = 0 to numContacts - 1:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; i. If addressBook[i].name == name:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1. Print &quot;Contact found:&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;2. Print &quot;Name: &quot;, addressBook[i].name&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3. Print &quot;Address: &quot;, addressBook[i].address&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;4. Print &quot;Phone: &quot;, addressBook[i].phone&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5. Set found to true&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;6. Break the loop&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;c. If found is false:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; i. Print &quot;Contact not found.&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;8. Main program:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;a. Declare integer choice&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;b. Declare string searchName&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;c. Do:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; i. Print &quot;\nAddress Book Menu&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ii. Print &quot;1. Add Contact&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; iii. Print &quot;2. Display Contacts&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; iv. Print &quot;3. Search Contact&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; v. Print &quot;4. Exit&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; vi. Print &quot;Enter your choice: &quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; vii. Read choice&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; viii. Ignore newline character&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ix. Switch choice:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1. Case 1:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - Call addContact()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;2. Case 2:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - Call displayContacts()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;3. Case 3:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - Print &quot;Enter name to search: &quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - Read searchName&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - Call searchContact(searchName)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;4. Case 4:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - Print &quot;Exiting program. Goodbye!\n&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - Break the loop&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5. Default:&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - Print &quot;Invalid choice. Please try again.&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;b. While choice != 4&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="90" y="2740" width="360" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-2" target="C1_O1CcxP0R5iGcXeIFu-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="550" y="10" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-3" target="C1_O1CcxP0R5iGcXeIFu-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-3" value="name, address, phone&lt;br&gt;choice, searchName&lt;br&gt;MAX_CONTACTS = 100&lt;br&gt;addressBook&lt;br&gt;&amp;nbsp;numContacts = 0" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="520" y="90" width="158.75" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-5" target="C1_O1CcxP0R5iGcXeIFu-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-5" value="addContact" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="547.82" y="220" width="104.37" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-7" target="C1_O1CcxP0R5iGcXeIFu-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-7" value="If numContacts &amp;lt; MAX_CONTACTS" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="525.32" y="320" width="149.38" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-9" target="C1_O1CcxP0R5iGcXeIFu-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-9" value="newContact" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="545.93" y="490" width="106.88" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-11" target="C1_O1CcxP0R5iGcXeIFu-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-11" value="&quot;Enter name: &quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="540.0100000000001" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-15" target="C1_O1CcxP0R5iGcXeIFu-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-15" value="Read newContact.name" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="539.3699999999999" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-17" target="C1_O1CcxP0R5iGcXeIFu-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-17" value="&quot;Enter address:&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="540.0100000000001" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-19" target="C1_O1CcxP0R5iGcXeIFu-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-19" value="Read&lt;br&gt;newContact.address" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="540.01" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-21" target="C1_O1CcxP0R5iGcXeIFu-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-21" value="&quot;Enter phone number:&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="539.37" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-23" target="C1_O1CcxP0R5iGcXeIFu-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-23" value="Read&lt;br&gt;newContact.phone" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-25" target="C1_O1CcxP0R5iGcXeIFu-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-25" value="addressBook[numContacts] = newContact" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="504.36" y="1100" width="190.01" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-27" target="C1_O1CcxP0R5iGcXeIFu-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-27" value="increment numContacts by 1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="547.82" y="1220" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-29" target="C1_O1CcxP0R5iGcXeIFu-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-29" value="Else" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="547.82" y="1450" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-31" target="C1_O1CcxP0R5iGcXeIFu-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-31" value="&quot;Address book is full. Cannot add more contacts." style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="527.8199999999999" y="1580" width="140.01" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-33" target="C1_O1CcxP0R5iGcXeIFu-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-33" value="&quot;Contact added succesfully!&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="537.82" y="1360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-36" target="C1_O1CcxP0R5iGcXeIFu-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-36" value="displayContacts" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="540" y="1670" width="117.18" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-38" target="C1_O1CcxP0R5iGcXeIFu-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-38" value="If numContacts == 0" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="549.37" y="1770" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-40" target="C1_O1CcxP0R5iGcXeIFu-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-40" value="&quot;Address book is empty.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="539.37" y="1890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="C1_O1CcxP0R5iGcXeIFu-42" target="C1_O1CcxP0R5iGcXeIFu-45" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-42" value="Else" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="549.9999999999999" y="1980" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="C1_O1CcxP0R5iGcXeIFu-45" target="-mtsYpSqm6FbQ-RLsG-G-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1_O1CcxP0R5iGcXeIFu-45" value="For i&amp;nbsp; = 0 to numContacts - 1:" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="540.01" y="2110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-1" target="-mtsYpSqm6FbQ-RLsG-G-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-1" value="If addressBook[i].name == name" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="520.01" y="2660" width="160.01" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-3" target="-mtsYpSqm6FbQ-RLsG-G-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-3" value="&quot;Name&quot;, &quot;Address&quot;, &quot;Phone&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="539.3699999999999" y="2190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-5" target="-mtsYpSqm6FbQ-RLsG-G-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-5" value="&quot;--------------&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540.01" y="2280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-8" target="-mtsYpSqm6FbQ-RLsG-G-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-8" value="searchContact" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="544.06" y="2380" width="111.88" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-10" target="-mtsYpSqm6FbQ-RLsG-G-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-10" value="found = false" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540.01" y="2480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-12" target="-mtsYpSqm6FbQ-RLsG-G-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-12" value="For i = 0 to numContacts -1:" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540.01" y="2570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-15" target="-mtsYpSqm6FbQ-RLsG-G-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-15" value="&quot;Contact found:&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="2860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-17" target="-mtsYpSqm6FbQ-RLsG-G-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-17" value="&quot;Name&quot;, &quot;Address&quot;, &quot;Phone&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="539.37" y="2950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-19" target="-mtsYpSqm6FbQ-RLsG-G-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-19" value="found = true" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="539.9999999999999" y="3040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-21" target="-mtsYpSqm6FbQ-RLsG-G-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-21" value="If found = false" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560.01" y="3140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-23" target="-mtsYpSqm6FbQ-RLsG-G-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-23" value="&quot;Contact not found&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="539.37" y="3260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-25" target="-mtsYpSqm6FbQ-RLsG-G-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-25" target="-mtsYpSqm6FbQ-RLsG-G-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-25" value="Do" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560.01" y="3350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-27" target="-mtsYpSqm6FbQ-RLsG-G-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-27" value="&quot;Address Book Menu&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540.01" y="3460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-29" target="-mtsYpSqm6FbQ-RLsG-G-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-29" value="&quot;Add contact&quot;, &quot;Display Contacts&quot;, &quot;Search Contact&quot;, &quot;Exit&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="539.37" y="3550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-31" target="-mtsYpSqm6FbQ-RLsG-G-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-31" value="&quot;Enter your choice&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="539.37" y="3640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-33" target="-mtsYpSqm6FbQ-RLsG-G-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-33" value="Print choice" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540.01" y="3740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-36" target="-mtsYpSqm6FbQ-RLsG-G-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-36" value="Call addContact" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="537.83" y="3840" width="124.37" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-38" target="-mtsYpSqm6FbQ-RLsG-G-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-38" value="Call displayContacts" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="541.87" y="3950" width="115.01" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-40" target="-mtsYpSqm6FbQ-RLsG-G-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-40" value="Call searchName" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="532.82" y="4180" width="135.01" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-41" target="-mtsYpSqm6FbQ-RLsG-G-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-41" value="&quot;Enter name to search&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540.01" y="4060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-45" target="-mtsYpSqm6FbQ-RLsG-G-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-45" value="&quot;Exiting program. Goodbye!&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="540.33" y="4280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-47" value="&quot;Invalid Choice. Please try again.&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="3470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-mtsYpSqm6FbQ-RLsG-G-48" target="-mtsYpSqm6FbQ-RLsG-G-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-48" value="While choice ! = 4" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="710" y="3340" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-mtsYpSqm6FbQ-RLsG-G-51" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="549.37" y="4370" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
