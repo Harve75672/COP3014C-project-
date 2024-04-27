@@ -1,3 +1,10 @@
+/*
+Name: Briana Harvey
+Date: 4/26/2024
+Project Name: Project Part 3
+Description: This program is an address book that allows the user to add contacts, display contacts, and search for contacts. The program uses a structure to store contact information and an array to store multiple contacts. The program uses a menu to allow the user to choose between the different options. The program will continue to run until the user chooses to exit.
+
+*/
 #include <iostream>
 #include <string>
 using namespace std;
